@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Task</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            background:#f4f4f4;
+            padding:30px;
+        }
+
+        .container{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            width:400px;
+            margin:auto;
+        }
+
+        button{
+            padding:10px 20px;
+            margin:10px;
+            border:none;
+            background:#007bff;
+            color:white;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        input{
+            padding:10px;
+            margin:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>JavaScript Mini Project</h1>
+
+<button onclick="changeColor()">Change Background Color</button>
+
+<button onclick="showAlert()">Show Alert</button>
+
+<h2>Simple Calculator</h2>
+
+<input type="number" id="num1" placeholder="First Number">
+
+<input type="number" id="num2" placeholder="Second Number">
+
+<br>
+
+<button onclick="addNumbers()">Add</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function changeColor(){
+    document.body.style.backgroundColor = "lightblue";
+}
+
+function showAlert(){
+    alert("Welcome to Cognifyz Internship Project!");
+}
+
+function addNumbers(){
+
+    let a = Number(document.getElementById("num1").value);
+
+    let b = Number(document.getElementById("num2").value);
+
+    let sum = a + b;
+
+    document.getElementById("result").innerHTML =
+    "Result = " + sum;
+}
+
+</script>
+
+</body>
+</html>
