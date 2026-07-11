@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavya Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2>Kavya Gallery</h2>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<h1>Beautiful Image Gallery</h1>
+
+<p>Explore Nature, Fashion & Technology Images</p>
+
+<input type="text"
+id="search"
+placeholder="Search Images...">
+
+</section>
+
+<section class="buttons">
+
+<button onclick="filterSelection('all')">All</button>
+
+<button onclick="filterSelection('nature')">Nature</button>
+
+<button onclick="filterSelection('fashion')">Fashion</button>
+
+<button onclick="filterSelection('technology')">Technology</button>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<div class="image nature">
+<img src="https://picsum.photos/id/1018/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image fashion">
+<img src="https://picsum.photos/id/1025/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image technology">
+<img src="https://picsum.photos/id/180/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image nature">
+<img src="https://picsum.photos/id/1040/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image fashion">
+<img src="https://picsum.photos/id/1062/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image technology">
+<img src="https://picsum.photos/id/0/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image nature">
+<img src="https://picsum.photos/id/1015/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image fashion">
+<img src="https://picsum.photos/id/64/400/300"
+onclick="openImage(this.src)">
+</div>
+
+<div class="image technology">
+<img src="https://picsum.photos/id/20/400/300"
+onclick="openImage(this.src)">
+</div>
+
+</section>
+
+<div id="lightbox">
+
+<span onclick="closeImage()">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<section id="about">
+
+<h2>About Gallery</h2>
+
+<p>
+
+This responsive image gallery was developed using
+HTML, CSS and JavaScript.
+
+It includes image filtering, lightbox preview,
+search functionality and responsive design.
+
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<input type="text"
+placeholder="Your Name">
+
+<input type="email"
+placeholder="Your Email">
+
+<textarea
+placeholder="Your Message">
+</textarea>
+
+<button>Send</button>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Kavya Image Gallery
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
